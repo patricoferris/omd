@@ -25,3 +25,5 @@ let to_sexp ast = Format.asprintf "@[%a@]@." Sexp.print (Sexp.create ast)
 let headers = Toc.headers
 
 let toc = Toc.toc
+
+module Print = Print

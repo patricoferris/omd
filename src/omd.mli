@@ -58,3 +58,7 @@ val headers :
   ?remove_links:bool -> 'attr block list -> ('attr * int * 'attr inline) list
 
 val toc : ?start:int list -> ?depth:int -> doc -> doc
+
+module Print : sig 
+  val pp : Format.formatter -> doc -> unit
+end 
